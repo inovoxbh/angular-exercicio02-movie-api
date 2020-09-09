@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { SearchboxComponent } from './searchbox/searchbox.component';
 import { MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.component';
 
@@ -13,7 +12,6 @@ import { MoviesComponent } from './movies/movies.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchboxComponent,
     MovieComponent,
     MoviesComponent
   ],
