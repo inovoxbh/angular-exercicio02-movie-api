@@ -1,8 +1,9 @@
 <div class="card" style="width: 18rem;">
-    <img src="../../assets/movie_card.jpg" class="card-img-top" alt="perdidomarte">
-    <div class="card-body">
-      <h5 class="card-title">Perdido em Marte</h5>
-      <p class="card-text">O astronauta Mark Watney (Matt Damon) é enviado a uma missão em Marte. Após uma severa tempestade ele é dado como morto, abandonado pelos colegas e acorda sozinho no misterioso planeta com escassos suprimentos, sem saber como reencontrar os companheiros ou retornar à Terra.</p>
-      <a href="http://www.adorocinema.com/filmes/filme-221524/" target="_blank" class="btn btn-success">Informações</a>
-    </div>
+  <!-- exibe o título do filme conforme propriedade title do parâmetro movie recebido pelo componente. -->
+  <h3>{{movie.title}}</h3>
+  
+  <!-- exibe o poster do filme conforme propriedade poster_path do parâmetro movie recebido pelo componente. -->
+  <figure>
+    <img [src]="'https://image.tmdb.org/t/p/w300_and_h450_bestv2' + movie.poster_path" alt="">
+  </figure>
 </div>

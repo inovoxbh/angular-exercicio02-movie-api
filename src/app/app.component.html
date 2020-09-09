@@ -1,5 +1,15 @@
 <div class="toolbar" role="banner">
   <app-header></app-header>
   <app-searchbox></app-searchbox>
-  <app-movies></app-movies>
+
+  <div >
+    <input [(ngModel)]="moviesFilter"
+      (ngModelChange)="onMoviesFilter($event)"
+      name="moviesFilter"
+      type="text"
+      placeholder="Buscar filmes...">
+  </div>
+  
+  <!-- exibe a listagem de filmes passando o parâmetro de entrada [movies] que contém o array de filmes que foram retornados pela API externa -->
+  <app-movies [movies]="filteredMovies"></app-movies>
 </div>
